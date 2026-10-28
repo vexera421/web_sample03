@@ -1,0 +1,391 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, "맑은 고딕", sans-serif;
+    color: #333;
+    bottom: #f8fafc;
+    line-height: 1.5;
+
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.wrap {
+    max-width:1150px;
+    margin: 0 auto;
+}
+
+/* top 디자인 */
+.top {
+    background-color: #002244;
+    color: #dbeafe;
+    font-size: 12px;
+    padding: 7px 0;
+    
+}
+.topin {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.headin {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    gap: 10px;
+    padding: 18px 0px;
+}
+
+header {
+    background-color: #003366;
+    color: white;
+}
+.logo {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.mark {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%; /* 동그란 테두리 만들기 */
+    background-color: white;
+    color: #003366;
+    font-size: 22px;
+    font-weight: bold;
+
+}
+
+.logo b {
+    display: block;
+    font-size: 25px;
+
+
+}
+
+.logo small {
+    font-size: 10px;
+    color: #bfdbfe;
+    letter-spacing: 1px;
+}
+
+nav {
+    display: flex;
+    gap: 5px;
+    font-size: 13px;
+    padding: 6px;
+    border-radius: 8px;
+    background-color: #002855;
+    color: white;
+    margin-bottom: 15px;
+}
+
+nav a {
+    color: #dbeafe;
+    padding: 9px 12px;
+}
+
+nav a:hover {
+    background-color: #2563a8;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* main 컨텐츠 디자인 */
+
+.main {
+    padding-top: 30px;
+    padding-bottom: 45px;
+}
+
+.hero { /* 베인 배너 */
+    background: linear-gradient(110deg,#003366, #005599);
+    border-radius: 14px;
+    color: white;
+    padding: 40px;
+    position: relative;
+
+}
+
+.pill {
+    background-color: #245985;
+    border: 1px solid #6496c4;
+    border-radius: 20px;
+    padding: 4px 12px;
+    font-size: 11px;
+
+}
+
+.hero h1 {
+    font-size: 32px;
+}
+
+.hero p {
+    font-size: 14px;
+    color: #dbeafe;
+    margin-bottom: 20px;
+
+}
+
+/* 공통 버튼 디자인 */
+
+.btn {
+    border: 0;
+    text-align: center;
+    padding: 10px 17px;
+    font-family: inherit;
+    background-color: pink;
+    border-radius: 6px;
+    font-size: 13px;
+
+}
+
+.btn:hover {
+    text-decoration: none;
+    opacity: 0.9;
+}
+
+/*오랜지 버튼 다자인*/
+
+.orange-btn {
+    background-color: #e67e22;
+
+}
+
+/*흰색 버튼 디자인 */
+
+.white-btn {
+    background-color: white;
+    color: #003366;
+    margin-left: 5px;
+}
+
+.watermark {
+   font-size: 150px;
+   opacity: 0.1;
+   font-weight: bold;
+   color: white;
+   position: absolute;
+   right: 20px;
+   bottom: -40px;
+}
+
+.quick {
+    display: flex;
+    gap: 15px;
+    
+
+}
+
+.quick a{
+    flex: 1;
+    border: 1px solid #e2e8f0;
+    padding: 18px 10px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 27px;
+
+
+}
+
+.quick a:hover {
+    text-decoration: none;
+    border:  1px solid #9bb8d4;
+}
+.quick i {
+    display: block;
+    font-size: 22px;
+    border-radius: 50%;
+    background-color: #eff6ff;
+    width: 45px;
+    height: 45px;
+    margin: 0 auto 10px;
+    padding-top: 7px;
+    font-style: normal; /* 이탤릭체 -> 원래 상태로 복귀 */
+    
+
+}
+
+
+.quick b {
+    display: block;
+    font-size: 13px;
+}
+
+
+.quick small {
+    display: block;
+    font-size: 11px;
+    color: #64748b;
+    margin-top: 5px;
+} 
+
+.news {
+    display: flex;
+    gap: 15px;
+    margin-top: 27px;
+}
+
+.panel {
+    flex: 1; /* 균등분할 */
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 22px;
+    background-color: white;
+
+}
+
+.notice-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e2e8f0;
+    margin-bottom: 15px;
+
+    
+
+}
+
+.news-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e2e8f0;
+    margin-bottom: 15px;
+
+
+
+
+}
+
+.news-title a { /*더보기 + */
+    color: #2563a8;
+    font-size: 12px;
+
+
+}
+
+
+.news-title small { /* CAMPUS NOW */
+    color: #94a3b8;
+    font-size: 11px;
+
+}
+
+.notice-title h2 {
+    font-size: 17px;
+}
+
+.news-title h2 {
+    font-size: 17px;
+}
+
+.notice-content { /* 공지사항글 리스트 */
+    list-style: none; /* 글머리 기호 삭제 */
+    margin: 0;
+    padding: 0; /* 리스트가 기본적으로 가지고 있는 왼쪽 말머리 공간 삭제 */
+
+
+}
+.notice-content li {
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 8px 0;
+    align-items: center;
+}
+
+.notice-content em {
+    background-color: #fee2e2;
+    border-radius: 4px;
+    font-style: normal;
+    font-size: 11px;
+    padding: 2px 7px;
+    color: #b91c1c;
+
+}
+
+.notice-content span {
+    font-size: 11px;
+    color: #94a3b8;
+}
+
+.news-content {
+    display: flex;
+    gap: 15px;
+
+}
+
+.news-content img {
+    border-radius: 7px;
+    width: 120px;
+    height: 90px;
+    object-fit: cover;
+
+
+}
+
+.news-content b {
+    font-size: 7px;
+    color: #2563a8;
+
+
+}
+
+.news-content h3 {
+    font-size: 13px;
+    margin: 5px 0;
+}
+
+.news-content p {
+    font-size: 13px;
+    color: #64748b;
+
+}
+.news-content span {
+    font-size: 11px;
+    color: #94a3b8;
+}
+
+/* footer 디자인 */
+
+footer {
+    background-color: #1e293b;
+    color: #94a3b8;
+    padding: 28px 0;
+    font-size: 11px;
+
+}
+.footerlink {
+    display: flex;
+    justify-content: space-between;
+    color: #e2e8f0;
+    border-bottom: 1px solid #475569;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    gap: 12px;
+
+}
+
+.footerlink p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
