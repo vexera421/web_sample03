@@ -174,6 +174,14 @@ nav a:hover {
     background-color: white;
     color: #003366;
     margin-left: 5px;
+    border: 1px solid gray;
+}
+/*남색 버튼*/
+.navy-btn {
+    background-color: #003366;
+    color: white;
+    margin-left: 5px;
+
 }
 
 .watermark {
@@ -313,7 +321,7 @@ nav a:hover {
     align-items: center;
 }
 
-.notice-content em {
+ em {
     background-color: #fee2e2;
     border-radius: 4px;
     font-style: normal;
@@ -388,4 +396,387 @@ footer {
 .footerlink p {
     margin-top: 5px;
     margin-bottom: 5px;
+}
+
+/* 게시판 목록 디자인 */
+
+/* 페이지 게시판 배너 */
+
+.pagetitle {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #dbe2ea;
+    margin-bottom: 25px;
+    align-items: end; /* 세로 정렬에서 하단 정렬 */
+
+}
+
+.pagetitle small {
+    font-size: 12px;
+    color: #2563a8;
+
+}
+
+.pagetitle h1 {
+    font-size: 26px;
+    color: #1e293b;
+
+}
+
+.pagetitle p {
+    font-size: 12px;
+    color: #64748b;
+}
+
+/* 게시판 검색 디자인 */
+.search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 9px;
+    margin-bottom: 20px;
+}
+
+select, input {
+    font-family: inherit;
+    font-size: 13px;
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+    background-color: white;
+
+}
+
+.tablebox {
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    background-color: white;
+
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; 
+    font-size: 12px;
+}
+
+th {
+    background-color: #f1f6f9;
+    color: #334155;
+    padding: 13px;
+    border-bottom: 2px solid #cbd5e1;
+
+}
+
+td {
+    padding: 14px;
+    border-bottom: 1px solid #e2e8f0;
+
+}
+.pinned {
+    background-color: #eff6ff
+}
+
+td label {
+    padding: 2px 7px;
+    background-color: #f1f5f9;
+    border-radius: 4px;
+    color: #475569;
+    font-size: 11px;
+
+}
+
+td:nth-child(3) { /* tr 내 td 중 3번째 td만 선택 */
+    text-align: left;
+
+}
+
+/* 게시판 목록 하단 페이지 번호 디자인 */
+
+.borderbottom {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #64748b;
+
+}
+
+.pages {
+    display: flex;
+    gap: 5px;
+
+}
+
+.pages a {
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    text-align: center;
+    background-color: white;
+    padding: 5px 8px;
+
+}
+
+.pages .selected {
+    background-color: #003366;
+    color: white;
+}
+
+/* 게시판 글 내용보기 디자인 */
+.back {
+    color: #64748b;
+    font-size: 12px;
+}
+
+.article {
+    border: 1px solid #e2e8f0;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.articlehead {
+    background-color: #f8fafc;
+    padding: 26px;
+    border-bottom: 1px solid #e2e8f0;
+
+}
+
+.articlehead h1 {
+    color: #1e293b;
+    font-size: 23px;
+    margin-top: 15px;
+    margin-left: 0;
+    margin-bottom: 20;
+
+}
+.articlehead .meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    color: #64748b;
+    gap: 10px;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 12px;
+
+}
+
+.articlehead small {
+    font-size: 11px;
+    color: #94a3b8;
+
+}
+
+.articlebody {
+    padding: 30px;
+    min-height: 250px;
+    font-size: 14;
+    line-height: 2.0;
+
+}
+
+.articlebody .schedule {
+    border: 1px solid #bfdbfe;
+    background-color: #eff6ff;
+    border-radius: 7px;
+    padding: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.articlebody .schedule h3 {
+    color: #003366;
+    font-size: 15px;
+    margin-top: 0;
+    margin-left: 0;
+
+}
+
+.articlebody ul {
+    padding-left: 20px;
+    margin-bottom: 5px;
+
+}
+
+.file-attachment {
+    border-top: 1px solid #e2e8f0;
+    padding: 18px;
+    font-size: 12px;
+}
+
+
+.file-attachment p {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #e2e8f0;
+    border-radius: 5px;
+    padding: 12px;
+    background-color: white;
+
+}
+
+.file-attachment a {
+    color: #2563a8;
+    font-weight: bold;
+
+}
+
+.file-attachment p small {
+    font-size: 11px;
+    color: #94a3b8;
+
+}
+
+.comments {
+    padding: 25px;
+    margin-top: 25px;
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+
+}
+
+.comments h2 {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.comments-count {
+    color: #2563a8;
+    font-size: 12px;
+
+}
+
+.comment {
+    border-bottom: 1px solid #e2e8f0;
+    padding: 15px;
+    font-size: 12px;
+
+}
+
+.comment b {
+    color: #334155;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.comment span {
+    color: #94a3b8;
+    font-size: 11px;
+
+}
+
+.comment.reply {
+    margin-left: 25px;
+    padding-left: 15px;
+    border-left: 2px solid #bfdbfe;
+    margin-bottom: 20px;
+
+}
+
+.comments textarea {
+    width: 100%;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 13px;
+    font-family: inherit;
+    padding: 10px;
+    resize: vertical; /* 높이 조절 가능 */
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-end; /*오른쪽 정렬*/
+    padding: 20px;
+    border-top: 1px solid #e2e8f0;
+    margin-top: 20px;
+}
+
+.write-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* 게시판 글쓰기 폼 디자인 */
+.formpanel {
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.form-row {
+    display: flex;
+    gap: 25px;
+}
+
+.form-row .field {
+    flex: 1;
+}
+
+.field {
+    margin-bottom: 22px;
+}
+
+.field label {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    color: #334155;
+    margin-bottom: 8px;
+}
+
+.field .red {
+    color: #dc2626;
+
+}
+
+.field input, .field select, .field textarea {
+    width: 100%;
+}
+
+.field textarea {
+    padding: 10px;
+    font-size: 13px;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+    background-color: white;
+    font-family: inherit;
+    resize: vertical;
+}
+
+/* read-only 속성을 가진 input 만 선택 */
+.field input[readonly] {
+    background-color: #f1f5f9;
+    color: #64748b;
+}
+
+.upload {
+    padding: 20px;
+    text-align: center;
+    background-color: #f8fafc;
+    border: 1px dashed #94a3b8;
+    border-radius: 7px;
+
+}
+
+.upload p {
+    font-size: 13px;
+    margin-top: 0;
+    margin-bottom: 5px;
+
+}
+
+.upload small {
+    font-size: 11px;
+    color: #94a3b8;
+    margin-bottom: 20px;
+
 }

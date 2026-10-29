@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="top">
+        <div class="wrap topin">
+            <span>🎓2026학년도 2학기 학사 일정 진행중</span>
+            <span>김대학 학생 (컴퓨터공학과) | 마이페이지 | 로그아웃</span>
+        </div>
+    </div>
+    <header>
+        <div class="wrap headin">
+            <a href="index.html" class="logo">
+            <span class="mark">校</span>
+            <span>
+                <b>한국대학교</b>
+                <small>HANGUK UNIVERSITY</small>
+            </span>
+        </a>
+        <nav>
+            <a href="index.html">홈</a>
+            <a href="board.html">공지사항</a>
+            <a href="#">대학 소식</a>
+            <a href="#">오시는 길</a>
+        </nav>
+        </div>
+    </header>
+    <main class="wrap main">
+       <div class="wrap">
+            <div class="pagetitle">
+            <div>
+            <small>게시판 관리</small>
+            <h1>새 게시물 작성</h1>
+            </div>
+        </div>
+        <!-- 글쓰기 폼-->
+         <section class="formpanel">
+            <div class="form-row">
+            <!--카테고리-->
+            <div class="field">
+                <label>카테고리 <b class="red">*</b></label>
+                <select>
+                    <option>분류를 선택하세요</option>
+                    <option>학사 공지</option>
+                    <option>장학 안내</option>
+                    <option>행사/모집</option>
+
+                </select>
+            
+            </div>
+            <!--작성자 성명-->
+            <div class="field">
+                <label>작성자 성명</label>
+                <input type="text" value="김대학 (컴퓨터공학과)" readonly>
+                </div>
+            </div>
+            <!-- 게시글 제목-->
+            <div class="field">
+                <label>게시글 제목 <b class="red">*</b></label>
+                <input type="text" placeholder="제목을 정확하고 명확하게 입력해주세요.">
+            </div>
+            <!--본문 내용-->
+            <div class="field">
+                <label>본문 내용 <b class="red">*</b></label>
+                <textarea rows="10" placeholder="내용을 작성해주세요."></textarea>
+            </div>
+            <!--파일 첨부-->
+            <div class="field">
+                <label>파일 첨부</label>
+                <div class="upload">
+                    <p>🗃️ 파일을 선택하여 첨부하세요</p>
+                    <small>최대 10MB (pdf, docx, zip 파일 지원)</small>
+                    <input type="file">
+                </div>
+            </div>
+            <!-- 등록 버튼, 취소버튼-->
+             <div class="actions">
+                <a href="board.html" class="btn white-btn">취소</a>
+                <button class="btn navy-btn">√ 등록 완료</button>
+             </div>
+         </section>
+
+    </main>
+    <footer>
+        
+            <div class="footerlink">
+                개인정보처리방침&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;이용약관&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 이메일무단수집거부&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 캠퍼스 오시는 길
+                <span>대표전화: 031-000-0000 | 입학상담: 031-000-0001</span>
+            </div>
+            <p>경기도 의정부시 대학로 123 (한국대학교 캠퍼스)</p>
+                <p>© 2026 HANGUK UNIVERSITY. ALL RIGHTS RESERVED. (초보자 실습용 웹 Frontend 샘플)</p>
+        </div>
+    </footer>
+
+</body>
+</html>
